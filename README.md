@@ -18,6 +18,11 @@ We will keep updating the codebase for easier usage and adaptation for your own 
 
 ## Setting Up
 
+Create Conda environment
+```
+conda create -n rlprompt python=3.7 openssl=1.1.1
+
+```
 Our codebase requires the following Python and PyTorch versions: 
 * Python >= 3.7
 * PyTorch >= 1.10.1 (install from the [official website](https://pytorch.org/get-started/locally/))
