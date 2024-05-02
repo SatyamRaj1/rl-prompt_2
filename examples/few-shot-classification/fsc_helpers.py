@@ -60,9 +60,9 @@ def load_few_shot_classification_dataset(
     # seed_dict = {0:'16-100', 1:'16-13', 2:'16-21', 3:'16-42', 4:'16-87'}
     seed_dict = {0:'64', 1:'200', 2:'Complete', 3:'16-42', 4:'16-87'}
     seed_path = seed_dict[dataset_seed]
-    filepath = f'{num_shots}-shot/{dataset}/{seed_path}/{split}.tsv'
-    # full_filepath = os.path.join(base_path, filepath)
-    full_filepath = f'./data/16-shot/toxic/{seed_path}/{split}.csv'
+    filepath = f'16-shot/toxic/{seed_path}/{split}.csv'
+    full_filepath = os.path.join(base_path, filepath)
+    # full_filepath = f'./data/16-shot/toxic/{seed_path}/{split}.csv'
     df = pd.read_csv(full_filepath, sep='\t')
     if 'text' in df:
         source_texts = df.text.tolist()
