@@ -20,7 +20,7 @@ reward_shaping_new_min: 0
 reward_shaping_new_max: 5
 top_k: 256
 # Trainer
-max_train_steps: 12000
+max_train_steps: 1200
 train_shuffle: false
 eval_steps: 10
 save_steps: 100
